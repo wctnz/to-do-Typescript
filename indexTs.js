@@ -50,13 +50,11 @@ var getFieldsForUpdate = function (prev, next) {
         return acc;
     }, prev);
 };
-// const task1 = createTask("Новая задача", "Тест")
-// console.log("create: ", tasks)
-// updateTask(task1.id, { title: "new Title" })
-// console.log("update: ", tasks )
-// toggleIsCompleteTask(task1.id, false)
-// console.log("completed: ", tasks)
-// removeTask(task1.id)
-// console.log("delete: ", tasks)
-var task1 = createTask("Новая задача", "Тест");
+var res1 = createTask("Изучить Typescript", "JavaScript со строгой типизацией");
 console.log("create: ", tasks);
+updateTask(res1.id, {title: "Изучить Redux", desc: "Стейт менеджер"});
+console.log("update: ", tasks);
+toggleIsCompleteTask(res1.id, true)
+console.log("completed: ", tasks)
+removeTask(res1.id)
+console.log("delete: ", tasks)

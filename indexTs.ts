@@ -59,13 +59,11 @@ return acc
 }, prev)    
 } 
 
-// const task1 = createTask("Новая задача", "Тест")
-// console.log("create: ", tasks)
-// updateTask(task1.id, { title: "new Title" })
-// console.log("update: ", tasks )
-// toggleIsCompleteTask(task1.id, false)
-// console.log("completed: ", tasks)
-// removeTask(task1.id)
-// console.log("delete: ", tasks)
-
-
+const task1 = createTask("Новая задача", "Тест")
+console.log("create: ", tasks)
+updateTask(task1.id, { title: "new Title" })
+console.log("update: ", tasks )
+toggleIsCompleteTask(task1.id, false)
+console.log("completed: ", tasks)
+removeTask(task1.id)
+console.log("delete: ", tasks)
